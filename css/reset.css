@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@font-face {
+    font-family: RobotoCondensedB;
+    src: url(../font/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+    font-family: RobotoCondensedL;
+    src: url(../font/RobotoCondensed-Light.ttf);
+}
+@font-face {
+    font-family: RobotoCondensedR;
+    src: url(../font/RobotoCondensed-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: RobotoCondensedR, 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+body,h1,p,input,label {
+    margin: 0;
+    padding: 0;
+    font-family: RobotoCondensedR, 'Noto Sans KR', sans-serif;
+    color: #666;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+ul,li,ol {list-style: none;}
+.cf::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.fl {float: left;}
+.fr {float: right;}
+img{border: 0;}
+html{overflow-y: scroll;}
+legend {
+    display: none;
+}

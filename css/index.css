@@ -1,0 +1,225 @@
+#header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: url(../img/main_visual1.jpg) no-repeat;
+    z-index: 1;
+}
+
+
+/* ===== contents ===== */
+
+#cont_wrap h2 {
+    font-size: 15px;
+    font-weight: 500;
+}
+#cont_wrap h2 span {
+    position: relative;
+    display: block;
+    font-family: RobotoCondensedR;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+/* cont1 */
+#cont_wrap .cont1 {
+    padding: 100px 0;
+}
+#cont_wrap .cont1 .cont1_tit {
+    float: left;
+    width: 288px;
+    height: 288px;
+    background: url(../img/cont1_tit_bg.jpg) no-repeat;
+    padding: 70px 60px;
+}
+#cont_wrap .cont1 h2 span::after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    bottom: -20px;
+    width: 20px;
+    height: 2px;
+    background: var(--primary-color);
+}
+#cont_wrap .cont1 .best_box {
+    position: relative;
+    width: calc(100% - 320px);
+    float: right;
+}
+#cont_wrap .cont1 .best_box .more {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+}
+#cont_wrap .cont1 .best_slide {
+    position: relative;
+}
+#cont_wrap .cont1 .best_slide .list > a {
+    display: block;
+    width: 270px;
+    height: 278px;
+}
+#cont_wrap .cont1 .best_slide .list > a img {
+    width: 100%;
+    height: 100%;
+}
+
+/* cont2 */
+#cont_wrap .cont2 article {
+    float: left;
+    width: 50%;
+    height: inherit;
+}
+#cont_wrap .cont2 article.bs .bs_bg {
+    position: absolute;
+    width: 50%;
+    height: inherit;
+    left: 0;
+    background: url(../img/cont2_bs_bg.jpg)no-repeat;
+    background-size: cover;
+    background-position: left;
+    z-index: -1;
+}
+#cont_wrap .cont2 article.bs .bs_account {
+    text-align: right;
+    padding: 100px 70px;
+}
+#cont_wrap .cont2 article.bs .bs_account h2 span {
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+#cont_wrap .cont2 article.bs .bs_account p {
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 15px;
+}
+#cont_wrap .cont2 article.bs .bs_account .bs_p1 {
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+#cont_wrap .cont2 article.bs .bs_account .bs_p2 {
+    margin-right: -15px;
+}
+#cont_wrap .cont2 article.new .new_bg {
+    position: absolute;
+    width: 50%;
+    height: inherit;
+    right: 0;
+    background: url(../img/cont2_new_bg1.jpg)no-repeat;
+    background-size: cover;
+    background-position: right;
+    z-index: -1;
+}
+#cont_wrap .cont2 article.new .new_account {
+    text-align: left;
+    padding: 100px 70px;
+}
+#cont_wrap .cont2 article.new .new_account h2 span {
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+#cont_wrap .cont2 article.new {
+    right: 0;
+}
+
+/* cont3 */
+#cont_wrap .cont3 {
+    padding: 50px;
+}
+#cont_wrap .cont3 h2 span::after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    bottom: -20px;
+    width: 20px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+/* ===== SWIPER ===== */
+/* 메인비쥬얼 */
+
+#header .swiper-button-next, .swiper-button-prev {
+    color: rgba(255, 255, 255, 0.8);
+}
+#header .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+}
+#header .swiper-pagination-bullet-active {
+    width: 40px;
+    height: 15px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+}
+#header .swiper {
+    width: 100%;
+    height: 100%;
+}
+#header .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+#header .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Best Menu */
+.cont1 .swiper {
+    width: 100%;
+    height: 100%;
+}
+.cont1 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.cont1 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
