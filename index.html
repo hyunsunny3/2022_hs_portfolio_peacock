@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/laptop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 <!-- 이미지,파비콘 만들기 -->
@@ -29,15 +33,74 @@
             <h1>logo</h1>
             <div class="container">
                 <ul class="gnb cf">
-                    <li><a href="#">DINING</a></li>
-                    <li><a href="#">CAFE</a></li>
-                    <li><a href="#">CUPBOARD</a></li>
-                    <li><a href="#">GOURMET</a></li>
+                    <li><a href="#" class="gnb_dining">DINING</a></li>
+                    <li><a href="#" class="gnb_cafe">CAFE</a></li>
+                    <li><a href="#" class="gnb_cupboard">CUPBOARD</a></li>
+                    <li><a href="#" class="gnb_gourmet">GOURMET</a></li>
                     <li><a href="#">LIFE<span></span></a></li>
                     <li><a href="#">ARCHIVE</a></li>
                 </ul>
+            </div> <!-- GNB LIST-->
+            <div class="search"><a href="#"></a></div> 
+
+            <div class="gnb_popup">
+                <a href="#" class="close"></a>
+                <div class="dining">
+                    <ul>
+                        <li><h2>DINING</h2></li>
+                        <li><a href="#">KOREAN</a></li>
+                        <li><a href="#">CHINESE</a></li>
+                        <li><a href="#">JAPANESE</a></li>
+                        <li><a href="#">ITALIAN</a></li>
+                    </ul>
+                </div>
+                <div class="cafe">
+                    <ul>
+                        <li><h2>CAFE</h2></li>
+                        <li><a href="#">SWEET</a></li>
+                        <li><a href="#">BAKERY</a></li>
+                        <li><a href="#">BEVERAGE</a></li>
+                    </ul>
+                </div>
+                <div class="cupboard">
+                    <ul>
+                        <li><h2>CUPBOARD</h2></li>
+                        <li><a href="#">CEREAL</a></li>
+                        <li><a href="#">SPICE</a></li>
+                        <li><a href="#">SNACK</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="gourmet">
+
+                </div> -->
+            </div> <!-- GNB POPUP -->
+            <div class="search_popup">
+                <a href="#" class="close"></a>
+                <div class="search_area">
+                    <form action="#" method="post">
+                        <input type="text" name="" id="" placeholder="SEARCH">
+                    </form>
+                    <a href="" class="delete"></a>
+                    <a href="" class="search_btn"></a>
+                </div>
+                <div class="search_word"></div>
+            </div> <!-- SEARCH POPUP -->
+
+            <div class="hamburger"><a href="#"></a></div>
+            <div class="m_gnb">
+                <div class="m_gnb_wrap">
+                    <a href="#" class="close"></a>
+                    <ul>
+                        <li><a href="#">DINING</a></li>
+                        <li><a href="#">CAFE</a></li>
+                        <li><a href="#">CUPBOARD</a></li>
+                        <li><a href="#">GOURMET</a></li>
+                        <li><a href="#">LIFE<span></span></a></li>
+                        <li><a href="#">ARCHIVE</a></li>
+                        <li><a href="#">MARKET</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="search"><a href="#"></a></div>
         </nav>
         <header id="header">
             <div class="swiper mySwiper">
@@ -55,22 +118,20 @@
                 <div class="container cf">
                     <div class="cont1_tit">
                         <h2>
-                            <span>PEACOCK<br>BEST</span>
-                            피코크에서<br>잘 나가는 메뉴를 한눈에!
+                            <strong><span>PEACOCK</span><span>BEST</span></strong>
+                            <p><span>피코크에서</span><span>잘 나가는 메뉴를 한눈에!</span></p>
                         </h2>
                     </div>
                     <div class="best_box">
                         <div class="more">
-                            <a href="#">VIEW BEST ></a>
+                            <a href="#">VIEW BEST</a>
                         </div>
                         <div class="best_slide">
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="list">
-                                            <a href="#">
-                                                <img src="./img/cont1_img1.png" alt="">
-                                            </a>
+                                            <a href="#" class="best_img1"></a>
                                             <div class="account">
                                                 <strong>면/파스타/피자</strong>
                                                 <p>유노추보 차돌우동 밀키트</p>
@@ -81,66 +142,55 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="list">
-                                            <a href="#">
-                                                <img src="./img/cont1_img1.png" alt="">
-                                            </a>
+                                            <a href="#" class="best_img2"></a>
                                             <div class="account">
-                                                <strong>면/파스타/피자</strong>
-                                                <p>유노추보 차돌우동 밀키트</p>
+                                                <strong>국/찌개/육수</strong>
+                                                <p>시추안하우스 마라소고기 전골</p>
                                                 <span class="time">10분</span>
-                                                <span class="weight">666g</span>
+                                                <span class="weight">665g</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="list">
-                                            <a href="#">
-                                                <img src="./img/cont1_img1.png" alt="">
-                                            </a>
+                                            <a href="#" class="best_img3"></a>
                                             <div class="account">
-                                                <strong>면/파스타/피자</strong>
-                                                <p>유노추보 차돌우동 밀키트</p>
+                                                <strong>국/찌개/육수</strong>
+                                                <p>오뎅식당 부대찌개 밀키트</p>
                                                 <span class="time">10분</span>
-                                                <span class="weight">666g</span>
+                                                <span class="weight">810g</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="list">
-                                            <a href="#">
-                                                <img src="./img/cont1_img1.png" alt="">
-                                            </a>
+                                            <a href="#" class="best_img4"></a>
                                             <div class="account">
                                                 <strong>면/파스타/피자</strong>
-                                                <p>유노추보 차돌우동 밀키트</p>
+                                                <p>맛이차이나 짜장면 밀키트</p>
                                                 <span class="time">10분</span>
-                                                <span class="weight">666g</span>
+                                                <span class="weight">2인분</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="list">
-                                            <a href="#">
-                                                <img src="./img/cont1_img1.png" alt="">
-                                            </a>
+                                            <a href="#" class="best_img5"></a>
                                             <div class="account">
                                                 <strong>면/파스타/피자</strong>
-                                                <p>유노추보 차돌우동 밀키트</p>
+                                                <p>초마짬뽕 밀키트</p>
                                                 <span class="time">10분</span>
-                                                <span class="weight">666g</span>
+                                                <span class="weight">2인분</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="list">
-                                            <a href="#">
-                                                <img src="./img/cont1_img1.png" alt="">
-                                            </a>
+                                            <a href="#" class="best_img6"></a>
                                             <div class="account">
-                                                <strong>면/파스타/피자</strong>
-                                                <p>유노추보 차돌우동 밀키트</p>
-                                                <span class="time">10분</span>
-                                                <span class="weight">666g</span>
+                                                <strong>김치/두부</strong>
+                                                <p>조선호텔 포기김치 3kg</p>
+                                                <span class="weight">3kg</span>
                                             </div>
                                         </div>
                                     </div>
@@ -157,20 +207,22 @@
                     <article class="bs">
                         <div class="bs_bg"></div>
                         <div class="bs_account">
-                            <h2><span>BRAND STORY</span></h2>
+                            <h2><strong>BRAND STORY</strong></h2>
                             <p class="bs_p1">소소한 일상에</p>
                             <p class="bs_p2">맛있는 즐거움</p>
                             <div class="more">
-                                <a href="#">LEARN MORE ></a>
+                                <a href="#">LEARN MORE</a>
                             </div>
                         </div>
                     </article>
                     <article class="new">
                         <div class="new_bg"></div>
                         <div class="new_account">
-                            <h2><span>PEACOCK NEW</span></h2>
+                            <h2><strong>PEACOCK NEW</strong></h2>
+                            <p class="new_p1">이달의 신제품을</p>
+                            <p class="new_p2">제일 먼저 만나보세요</p>
                             <div class="more">
-                                <a href="#">VIEW NEW ></a>
+                                <a href="#">VIEW NEW</a>
                             </div>
                         </div>
                     </article>
@@ -179,35 +231,48 @@
 
             <section class="cont3">
                 <div class="container">
-                    <h2><span>GOURMET</span></h2>
-                    
+                    <h2><strong>GOURMET</strong></h2>
+                    <div class="img_wrap">
+                        <div class="img1 on"><a href="#"><strong>맛집콜라보</strong></a></div>
+                        <div class="img2"><a href="#"><strong>피콕반점</strong></a></div>
+                        <div class="img3"><a href="#"><strong>만두 연구소</strong></a></div>
+                        <div class="img4"><a href="#"><strong></strong></a></div>
+                    </div>
                 </div>
             </section> <!-- cont3 -->
         </div>
         <footer id="footer">
-            <div class="container">
-                <h2></h2>
+            <div class="container cf">
+                <div class="footer_logo">
+                    <h2><a href="#">PEACOCK</a></h2>
+                </div>
+                <div class="footer_cont">
+                    <ul class="cf">
+                        <li><a href="#">피코크소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                    <div>
+                        <p>(주)이마트 | 대표자: 강희석 | 서울특별시 성동구 뚝섬로 377(성수동2가) | 사업자등록번호 : 206-86-50913</p>
+                        <p>통신판매업 신고번호 : 제2011-서울성동-0345호 | 이마트대표전화 : 02-380-5678</p>
+                        <p>(주)에스에스지닷컴 : 1577-3419 | 신세계백화점 : 1588-1234</p>
+                        <p>신세계포인트 : 1899-4349</p>
+                        <p class="copyright">© PEACOCK. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="sns">
+                    <ul class="cf">
+                        <li><a href="#" class="facebook">facebook</a></li>
+                        <li><a href="#" class="instagram">instagram</a></li>
+                    </ul>
+                </div>
             </div>
         </footer>
+        <div class="top_btn">
+            <a href="#header">Top</a>
+        </div>
     </div>
-    <!-- <script>
-        var swiper = new Swiper(".mySwiper", {
-          spaceBetween: 30,
-          centeredSlides: true,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script> -->
-      <script src="./js/swiper.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/javascript.js"></script>
 </body>
 </html>
