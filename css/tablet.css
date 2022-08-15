@@ -1,0 +1,193 @@
+@media screen and (min-width: 768px) and (max-width: 1049px) {
+    .container {
+        width: 100%;
+        height: inherit;
+        margin: 0 auto;
+    }
+
+    #nav .gnb {
+        display: none
+    }
+    #nav .hamburger {
+        display:block;
+        position:absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        width: 30px;
+        height: 22px;
+        background: url(../img/hamburger.png)no-repeat;
+    }
+    #nav .hamburger a {
+        display:block;
+        width: 100%;
+        height: 100%;
+    }
+    #nav .m_gnb {
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.7);
+        display:none;
+    }
+    #nav .m_gnb_wrap {
+        position:fixed;
+        top:0;
+        left:0;
+        width: 400px;
+        height: 100vh;
+        background: #fff;
+    }
+    #nav .m_gnb .close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        z-index: 10;
+    }
+    #nav .m_gnb .close::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 25px;
+        width: 2px;
+        height: 40px;
+        background: #000;
+        transform: rotate(45deg);
+    }
+    #nav .m_gnb .close::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 25px;
+        width: 2px;
+        height: 40px;
+        background: #000;
+        transform: rotate(-45deg);
+    }
+    #nav .m_gnb ul {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #nav .m_gnb ul li {
+        margin-bottom: 30px;
+    }
+    #nav .m_gnb ul li a {
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-family: RobotoCondensedL;
+        color:#000;
+    }
+
+    /* cont1 */
+    #cont_wrap .cont1 {
+        padding: 50px 0;
+    }
+    #cont_wrap .cont1 .cont1_tit {
+        float: none;
+        width: 100%;
+        height: auto;
+        background: none;
+        padding: 0;
+        text-align: center;
+    }
+    #cont_wrap .cont1 .cont1_tit h2 strong span {
+        display:inline;
+        margin-right: 15px
+    }
+    #cont_wrap .cont1 .cont1_tit h2 p span {
+        display:inline;
+        margin-right: 15px
+    }
+    #cont_wrap .cont1 .cont1_tit h2 strong::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+        width: 20px;
+        height: 2px;
+        background: var(--primary-color);
+    }
+    #cont_wrap .cont1 .best_box {
+        position: relative;
+        width: 100%;
+        float: none;
+        padding: 0 20px;
+    }
+    #cont_wrap .cont1 .best_box .more {
+        position: absolute;
+        right: 20px;
+        z-index: 10;
+        padding-right: 10px;
+    }
+
+    /* cont2 */
+    .cont2 {
+        height: 800px;
+    }
+    #cont_wrap .cont2 article {
+        float: none;
+        width: 100%;
+        height: 400px;
+    }
+    #cont_wrap .cont2 article.bs .bs_bg {
+        position: absolute;
+        width: 100%;
+        height: inherit;
+        left: 0;
+        background: url(../img/cont2_bs_bg.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #cont_wrap .cont2 article.bs .bs_account {
+        text-align: right;
+        padding: 60px 70px;
+    }
+    #cont_wrap .cont2 article.new .new_bg {
+        position: absolute;
+        width: 100%;
+        height: inherit;
+        left: 0;
+        background: url(../img/cont2_new_bg1.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #cont_wrap .cont2 article.new .new_account {
+        text-align: left;
+        padding: 60px 70px;
+    }
+
+    /* cont3 */
+    #cont_wrap .cont3 h2 {
+        text-align:center;
+    }
+    #cont_wrap .cont3 h2 strong::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #cont_wrap .cont3 .img_wrap {
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
+        padding: 0 5px
+    }
+    #cont_wrap .cont3 .img_wrap > div {
+        position: relative;
+        display: inline-block;
+        width: 49.5%;
+        height: 324px;
+        margin: 0;
+        background: #ccc;
+        transition: all 0.5s;
+    }
+    #cont_wrap .cont3 .img_wrap > div.on {
+        width: 49%;
+        transition: all 0.5s;
+    }
+}

@@ -1,0 +1,55 @@
+@media screen and (min-width: 1050px) and (max-width: 1240px) {
+    .container {
+        width: 100%;
+        height: inherit;
+        margin: 0 auto;
+    }
+
+    #cont_wrap .cont1 {
+        padding: 100px 0;
+    }
+    #cont_wrap .cont1 .best_box .more {
+        right: 20px;
+    }
+
+    .cont2 {
+        height: 500px;
+    }
+    #cont_wrap .cont2 article.bs .bs_bg {
+        background-position: center;
+    }
+    #cont_wrap .cont2 article.bs .bs_account p {
+        font-size: 34px;
+        color: #fff;
+        letter-spacing: 10px;
+    }
+    #cont_wrap .cont2 article.new .new_bg {
+        background-position: center;
+    }
+    #cont_wrap .cont2 article.new .new_account p {
+        font-size: 34px;
+        color: #fff;
+        letter-spacing: 5px;
+    }
+
+    #cont_wrap .cont3 {
+        padding-left: 20px
+    }
+    #cont_wrap .cont3 .img_wrap > div strong {
+        right: 10px;
+        font-size: 26px;
+    }
+    #cont_wrap .cont3 .img_wrap > div {
+        position: relative;
+        display: inline-block;
+        width: 17%;
+        height: 324px;
+        margin-right: 20px;
+        background: #ccc;
+        transition: all 0.5s;
+    }
+    #cont_wrap .cont3 .img_wrap > div.on {
+        width: 40%;
+        transition: all 0.5s;
+    }
+}
