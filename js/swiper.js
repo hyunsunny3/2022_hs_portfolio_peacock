@@ -14,6 +14,7 @@ var mainswiper = new Swiper("#header .mySwiper", {
       nextEl: "#header .swiper-button-next",
       prevEl: "#header .swiper-button-prev",
     },
+    
   });
 
   var bestswiper = new Swiper(".cont1 .mySwiper", {
